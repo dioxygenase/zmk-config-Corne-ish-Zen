@@ -9,11 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEF 0
-#define NAV 1
-#define NUM 2
-#define FUN 3
-#define BT  4
+#define QWE 0
+#define SYM 1
+#define NAV 2
+#define NUM 3
+#define MOU 4
+#define FUN 5
 
 &lt { quick_tap_ms = <200>; };
 
@@ -223,17 +224,17 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "DEF";
+            label = "QWE";
             bindings = <
 &kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
 &hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
 &kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
-                      &kp TAB    &lt NAV E  &kp BSPC     &lt BT RET &lt NUM SPACE &lt FUN ESC
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
             >;
         };
 
         nav_layer {
-            label = "NAV";
+            label = "SYM";
             bindings = <
 &none    &kp LC(A) &kp LC(C) &kp LC(V) &kp DEL          &none    &none     &none     &none     &none
 &kp LALT &kp LGUI  &kp LCTL  &kp LSFT  &kp RET          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
@@ -243,7 +244,7 @@
         };
 
         num_layer {
-            label = "NUM";
+            label = "NAV";
             bindings = <
 &none &kp N6 &kp N5 &kp N4 &none    &none &none    &none    &none    &none
 &none &kp N3 &kp N2 &kp N1 &none    &none &kp RSFT &kp RCTL &kp RGUI &kp RALT
@@ -253,7 +254,7 @@
         };
 
         fun_layer {
-            label = "FUN";
+            label = "NUM";
             bindings = <
 &none &kp F6 &kp F5 &kp F4  &none    &none &kp F14 &kp F15 &kp F16 &none
 &none &kp F3 &kp F2 &kp F1  &none    &none &kp F11 &kp F12 &kp F13 &none
@@ -263,7 +264,17 @@
         };
 
         bt_layer {
-            label = "BT";
+            label = "MOU";
+            bindings = <
+&none      &none        &bt BT_SEL 4 &bt BT_SEL 3 &none     &none &none &none &none &none
+&bt BT_CLR &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &none     &none &none &none &none &none
+&none      &none        &bt BT_PRV   &bt BT_NXT   &none     &none &none &none &none &none
+                        &none        &none        &none     &none &none &none
+            >;
+        };
+        
+ bt_layer {
+            label = "FUN";
             bindings = <
 &none      &none        &bt BT_SEL 4 &bt BT_SEL 3 &none     &none &none &none &none &none
 &bt BT_CLR &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &none     &none &none &none &none &none
