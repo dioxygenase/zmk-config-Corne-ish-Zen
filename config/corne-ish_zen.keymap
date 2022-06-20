@@ -29,18 +29,7 @@
             };
         };
 };
-/ {
-        behaviors {
-            shm: homerow_mods {
-                compatible = "zmk,behavior-hold-tap";
-                label = “sHOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping_term_ms = <100>;
-                flavor = “hold-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-        };
-};
+
 
 
 / {
@@ -62,7 +51,7 @@
    &none        &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
    &none        &hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI QUOT   &none
    &none        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH        &none
-                                                &hm NAV DEL     &hm SYM BKSP    &shm LSFT SQT   &hm NUM TAB     &hm MOU SPC     &hm FUN ENTER
+                                                &hm NAV DEL     &hm SYM BKSP    &hm LSFT SQT    &hm NUM TAB     &hm MOU SPC     &hm FUN ENTER
                         >;
                 };
 
