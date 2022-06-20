@@ -219,6 +219,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+   
+        shm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "sHOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <70>;
+            quick_tap_ms = <70>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -230,7 +240,7 @@
 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P 
 &hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI SEMICOLON 
 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH  
-                                                &lt 2 DEL       &lt 1 BKSP      &hm LSFT SQT    &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
+                                                &lt 2 DEL       &lt 1 BKSP      &shm LSFT SQT    &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
             >;
         };
 
