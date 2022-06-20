@@ -235,10 +235,10 @@
 
 
                         bindings = <
-   &none        &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
-   &none        &hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI QUOT   &none
-   &none        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH        &none
-                                                &lt 2 DEL       &lt 1 BKSP      &hm LSFT SQT    &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
                         >;
                 };
 
@@ -254,10 +254,10 @@
 
 
                         bindings = <
-   &none    &kp LBRC    &kp RBRC        &kp LPAR        &kp RPAR        &kp DQT         &kp KP_MINUS    &kp AMPS        &kp PIPE        &kp BACKSLASH   &kp SLASH       &none    
-   &none    &kp LGUI    &kp LALT        &kp LCTRL       &kp LSHFT       &kp SQT         &kp KP_PLUS     &kp DLLR        &kp PRCNT       &kp CARET       &kp ASTERISK    &none    
-   &none    &kp LT      &kp RT          &kp LBKT        &kp RBKT        &kp GRAVE       &kp EQUAL       &kp EXCL        &kp AT_SIGN     &kp HASH        &kp QUESTION    &none    
-                                        &kp COLON       &trans          &kp SEMICOLON   &kp TILDE       &kp UNDERSCORE  &kp KP_DOT
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
                         >;
                 };
 
@@ -272,10 +272,10 @@
 
 
                         bindings = < 
-   &none        &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)       &kp LG(X)       &kp LG(Z)       &none    
-   &none        &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &bt BT_SEL 4    &kp CAPS        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp LEFT_ARROW  &none    
-   &none        &none           &kp RALT        &none           &none           &none           &kp INS         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &none    
-                                                &trans          &trans          &trans          &kp K_PREV      &kp K_PP        &kp K_NEXT
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
                         >;
                 };
 
@@ -289,10 +289,10 @@
 
 
                         bindings = <
-   &none        &kp LBRC        &kp RBRC        &kp LPAR        &kp RPAR        &kp DQT         &kp KP_MINUS    &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp SLASH       &none    
-   &none        &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &kp SQT         &kp KP_PLUS     &kp KP_N4       &kp KP_N5       &kp KP_N6       &kp ASTERISK    &none    
-   &none        &kp LT          &kp RT          &kp LBKT        &kp RBKT        &kp GRAVE       &kp EQUAL       &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp QUESTION    &none    
-                                                &kp COLON       &kp UNDERSCORE  &kp SEMICOLON   &trans          &kp KP_N0       &kp KP_DOT
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
 
                         >;
                 };
@@ -306,10 +306,10 @@
 //                  |     |     |     |   |     |      |     |
 
                         bindings = <
-        &none   &none           &none           &none           &none           &none   &none   &none   &none   &none   &none   &none 
-        &none   &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none   &none   &none   &none   &none   &none   &none  
-        &none   &none           &none           &none           &none           &none   &none   &none   &none   &none   &none   &none 
-                                                &trans          &trans          &trans  &trans  &trans  &trans
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
                         >;
                 };
 
@@ -321,10 +321,10 @@
 // |    | F22 |RALT | F21 | F20 | F19 |   | PAUS | F01 | F02 | F03 | F10 |
 //                  |     |     |     |   |      |     |     |
                         bindings = <
-        &none   &kp F13         &kp F14         &kp F15         &kp F16         &kp PSCRN       &kp F13 &kp F7  &kp F8  &kp F9  &kp F12 &none 
-        &none   &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &kp F18         &kp F13 &kp F4  &kp F5  &kp F6  &kp F11 &none 
-        &none   &kp F22         &kp RALT        &kp F21         &kp F20         &kp PAUSE_BREAK &kp F13 &kp F1  &kp F2  &kp F3  &kp F10 &none 
-                                                &trans          &trans          &trans          &trans  &trans  &trans
+&kp X      &kp F      &kp O      &kp U      &kp MINUS    &kp Q      &kp P         &kp L       &kp B      &kp Z
+&hm LALT W &hm LGUI H &hm LCTL A &hm LSFT I &kp Y        &kp G      &hm RSFT T    &hm RCTL R  &hm RGUI S &hm RALT M
+&kp J      &kp K      &kp COMMA  &kp DOT    &none        &none      &kp D         &kp N       &kp C      &kp V
+                      &kp TAB    &lt NAV E  &kp BSPC     &lt NUM RET &lt NUM SPACE &lt FUN ESC
                         >;
                 };
     };
