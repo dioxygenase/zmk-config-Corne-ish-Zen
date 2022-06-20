@@ -237,20 +237,20 @@
         sym_layer {
             label = "SYM";
             bindings = <
-&none    &kp LC(A) &kp LC(C) &kp LC(V) &kp DEL          &none    &none     &none     &none     &none
-&kp LALT &kp LGUI  &kp LCTL  &kp LSFT  &kp RET          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none
-&none    &none     &none     &none     &kp LS(LG(C))    &kp HOME &kp PG_DN &kp PG_UP &kp END   &none
-                   &none     &none     &none            &none   &none    &none
+&kp LBRC    &kp RBRC        &kp LPAR        &kp RPAR        &kp DQT         &kp KP_MINUS    &kp AMPS        &kp PIPE        &kp BACKSLASH   &kp SLASH   
+&kp LGUI    &kp LALT        &kp LCTRL       &kp LSHFT       &kp SQT         &kp KP_PLUS     &kp DLLR        &kp PRCNT       &kp CARET       &kp ASTERISK
+&kp LT      &kp RT          &kp LBKT        &kp RBKT        &kp GRAVE       &kp EQUAL       &kp EXCL        &kp AT_SIGN     &kp HASH        &kp QUESTION
+                                        &kp COLON       &trans          &kp SEMICOLON   &kp TILDE       &kp UNDERSCORE  &kp KP_DOT
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-&none &kp N6 &kp N5 &kp N4 &none    &none &none    &none    &none    &none
-&none &kp N3 &kp N2 &kp N1 &none    &none &kp RSFT &kp RCTL &kp RGUI &kp RALT
-&none &kp N9 &kp N8 &kp N7 &none    &none &none    &none    &none    &none
-             &none  &kp N0 &kp BSPC &none &none    &none
+&bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)       &kp LG(X)       &kp LG(Z)        
+&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &bt BT_SEL 4    &kp CAPS        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp LEFT_ARROW
+&none           &kp RALT        &none           &none           &none           &kp INS         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END       
+                                                &trans          &trans          &trans          &kp K_PREV      &kp K_PP        &kp K_NEXT
             >;
         };
 
