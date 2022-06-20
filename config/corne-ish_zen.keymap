@@ -51,7 +51,7 @@
    &none        &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
    &none        &hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI QUOT   &none
    &none        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH        &none
-                                                &lt NAV DEL     &lt SYM BKSP    &hm LSFT SQT    &lt NUM TAB     &lt MOU SPC     &lt FUN ENTER
+                                                &lt 2 DEL       &lt 1 BKSP      &hm LSFT SQT     &lt 3 TAB        &lt 4 SPC          &lt 5 ENTER
                         >;
                 };
 
