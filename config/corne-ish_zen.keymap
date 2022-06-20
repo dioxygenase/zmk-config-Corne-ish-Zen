@@ -52,7 +52,7 @@
    
             shm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOMEROW_MODS";
+                label = "sHOMEROW_MODS";
                 #binding-cells = <2>;
                 tapping_term_ms = <100>;
                 flavor = "tap-preferred";
