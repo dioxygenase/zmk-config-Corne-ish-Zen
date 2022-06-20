@@ -273,7 +273,7 @@
             >;
         };
         
- bt_layer {
+ fun_layer {
             label = "FUN";
             bindings = <
 &none      &none        &bt BT_SEL 4 &bt BT_SEL 3 &none     &none &none &none &none &none
