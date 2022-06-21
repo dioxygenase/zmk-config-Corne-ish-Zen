@@ -37,6 +37,18 @@
             bindings = <&kp LPAR>;
             layers = <0>;
         };
+        combo_grave {
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&kp GRAVE>;
+            layers = <0>;
+        };
+        combo_underscore {
+            timeout-ms = <30>;
+            key-positions = <3 4>;
+            bindings = <&kp UNDERSCORE>;
+            layers = <0>;
+        };
         combo_lt {
             timeout-ms = <30>;
             key-positions = <10 11>;
@@ -47,6 +59,18 @@
             timeout-ms = <30>;
             key-positions = <11 12>;
             bindings = <&kp LBKT>;
+            layers = <0>;
+        };
+        combo_sqt {
+            timeout-ms = <30>;
+            key-positions = <12 13>;
+            bindings = <&kp SQT>;
+            layers = <0>;
+        };
+        combo_dqt {
+            timeout-ms = <30>;
+            key-positions = <13 14>;
+            bindings = <&kp DQT>;
             layers = <0>;
         };
         combo_rbrc {
@@ -121,24 +145,8 @@
             bindings = <&kp CAPS>;
             layers = <0>;
         };
-        combo_sqt {
-            timeout-ms = <30>;
-            key-positions = <12 13>;
-            bindings = <&kp SQT>;
-            layers = <0>;
-        };
-        combo_dqt {
-            timeout-ms = <30>;
-            key-positions = <13 14>;
-            bindings = <&kp DQT>;
-            layers = <0>;
-        };
-        combo_grave {
-            timeout-ms = <30>;
-            key-positions = <2 3>;
-            bindings = <&kp GRAVE>;
-            layers = <0>;
-        };
+
+
     };
     
     
