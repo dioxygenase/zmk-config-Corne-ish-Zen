@@ -23,6 +23,14 @@
     chosen {
       zmk,matrix_transform = &five_column_transform;
     };
+    macros {
+        macro_lang: macro_lang {
+        compatible = "zmk,behavior-macro";
+        label = "macro_lang";
+        #binding-cells = <0>;
+        bindings = <&tog QWE>, <&kp LC(SPACE)>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -170,16 +178,7 @@
             };
 
     };
-/ {
-    macros {
-        macro_lang: macro_lang {
-        compatible = "zmk,behavior-macro";
-        label = "macro_lang";
-        #binding-cells = <0>;
-        bindings = <&tog QWE>, <&kp LC(SPACE)>;
-        };
-    };
-};
+
     keymap {
         compatible = "zmk,keymap";
 
