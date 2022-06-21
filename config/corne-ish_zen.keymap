@@ -121,7 +121,29 @@
             bindings = <&kp CAPS>;
             layers = <0>;
         };
+        combo_sqt {
+            timeout-ms = <30>;
+            key-positions = <12 13>;
+            bindings = <&kp SQT>;
+            layers = <0>;
+        };
+        combo_dqt {
+            timeout-ms = <30>;
+            key-positions = <13 14>;
+            bindings = <&kp DQT>;
+            layers = <0>;
+        };
+        combo_grave {
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&kp GRAVE>;
+            layers = <0>;
+        };
     };
+    
+    
+    
+    
     
     behaviors {
             hm: homerow_mods {
@@ -144,7 +166,7 @@
 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P 
 &hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI SEMICOLON 
 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH  
-                                                &lt 2 DEL       &lt 1 BKSP      &hm LSFT SQT    &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
+                                                &lt 2 DEL       &lt 1 BKSP      &kp LSFT        &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
             >;
         };
 
