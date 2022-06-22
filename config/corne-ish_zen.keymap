@@ -83,6 +83,12 @@
             bindings = <&kp DQT>;
             layers = <0 1>;
         };
+        combo_excl {
+            timeout-ms = <30>;
+            key-positions = <23 24>;
+            bindings = <&kp EXCL>;
+            layers = <0 1>;
+        };
         combo_rbrc {
             timeout-ms = <30>;
             key-positions = <8 9>;
