@@ -10,12 +10,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define COL 0
-#define SYM 1
-#define NAV 2
-#define NUM 3
-#define MOU 4
-#define FUN 5
-#define QWE 6
+#define QWE 1
+#define SYM 2
+#define NAV 3
+#define NUM 4
+#define MOU 5
+#define FUN 6
+
 
 &lt { quick_tap_ms = <300>; };
 
@@ -23,13 +24,6 @@
 / {
     chosen {
       zmk,matrix_transform = &five_column_transform;
-    };
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        every_layer {
-            if-layers = <0 6>;
-            then-layer = <1 2 3 4 5>;
-        };
     };
     macros {
         macro_lang: macro_lang {
@@ -39,134 +33,140 @@
         bindings = <&tog QWE>, <&kp LC(SPACE)>;
         };
     };
-
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        every_layer {
+            if-layers = <0 1>;
+            then-layer = <2 3 4 5 6>;
+        };
+    };
     combos {
         compatible = "zmk,combos";
         combo_lbrc {
             timeout-ms = <30>;
             key-positions = <0 1>;
             bindings = <&kp LBRC>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_lpar {
             timeout-ms = <30>;
             key-positions = <1 2>;
             bindings = <&kp LPAR>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_grave {
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&kp GRAVE>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_underscore {
             timeout-ms = <30>;
             key-positions = <3 4>;
             bindings = <&kp UNDERSCORE>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_lt {
             timeout-ms = <30>;
             key-positions = <10 11>;
             bindings = <&kp LT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_lbkt {
             timeout-ms = <30>;
             key-positions = <11 12>;
             bindings = <&kp LBKT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_sqt {
             timeout-ms = <30>;
             key-positions = <12 13>;
             bindings = <&kp SQT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_dqt {
             timeout-ms = <30>;
             key-positions = <13 14>;
             bindings = <&kp DQT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_rbrc {
             timeout-ms = <30>;
             key-positions = <8 9>;
             bindings = <&kp RBRC>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_rpar {
             timeout-ms = <30>;
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_slash {
             timeout-ms = <30>;
             key-positions = <6 7>;
             bindings = <&kp KP_SLASH>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_mimus {
             timeout-ms = <30>;
             key-positions = <5 6>;
             bindings = <&kp KP_MINUS>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_plus {
             timeout-ms = <30>;
             key-positions = <15 16>;
             bindings = <&kp KP_PLUS>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_asterisk {
             timeout-ms = <30>;
             key-positions = <16 17>;
             bindings = <&kp KP_ASTERISK>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_rbkt {
             timeout-ms = <30>;
             key-positions = <17 18>;
             bindings = <&kp RBKT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_gt {
             timeout-ms = <30>;
             key-positions = <18 19>;
             bindings = <&kp GT>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_equal {
             timeout-ms = <30>;
             key-positions = <25 26>;
             bindings = <&kp EQUAL>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_qmark {
             timeout-ms = <30>;
             key-positions = <26 27>;
             bindings = <&kp QMARK>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_esc {
             timeout-ms = <30>;
             key-positions = <30 31>;
             bindings = <&kp ESC>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_caps {
             timeout-ms = <30>;
             key-positions = <31 32>;
             bindings = <&kp CAPS>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
         combo_lang {
             timeout-ms = <30>;
             key-positions = <34 35>;
             bindings = <&macro_lang>;
-            layers = <0 6>;
+            layers = <0 1>;
         };
 
     };
@@ -192,10 +192,18 @@
 &kp Q           &kp W           &kp F           &kp P           &kp G           &kp J           &kp L           &kp U           &kp Y           &kp SEMICOLON 
 &hm LGUI A      &hm LALT R      &hm LCTL S      &hm LSFT T      &kp D           &kp H           &hm RSFT N      &hm RCTL E      &hm LALT I      &hm RGUI O 
 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp K           &kp M           &kp CMMA        &kp DOT         &kp FSLH  
-                                                &lt 2 DEL       &lt 1 BKSP      &kp LSFT        &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
+                                                &lt NAV DEL       &lt SYM BKSP      &kp LSFT        &lt NUM TAB       &lt MOU SPC       &lt FUN ENTER
             >;
         };
-
+        QWE_layer {
+            label = "QWE";
+            bindings = <
+&kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P 
+&hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI SEMICOLON 
+&kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH  
+                                                &lt NAV DEL       &lt SYM BKSP      &kp LSFT        &lt NUM TAB       &lt MOU SPC       &lt FUN ENTER
+            >;
+        };
         sym_layer {
             label = "SYM";
             bindings = <
@@ -245,14 +253,6 @@
                                                 &trans          &trans          &trans          &trans  &trans  &trans
             >;
         };
-        QWE_layer {
-            label = "QWE";
-            bindings = <
-&kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P 
-&hm LGUI A      &hm LALT S      &hm LCTL D      &hm LSFT F      &kp G           &kp H           &hm RSFT J      &hm RCTL K      &hm LALT L      &hm RGUI SEMICOLON 
-&kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp CMMA        &kp DOT         &kp FSLH  
-                                                &lt 2 DEL       &lt 1 BKSP      &kp LSFT        &lt 3 TAB       &lt 4 SPC       &lt 5 ENTER
-            >;
-        };
+
     };
 };
