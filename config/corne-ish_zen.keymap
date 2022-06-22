@@ -19,8 +19,17 @@
 
 &lt { 
     quick_tap_ms = <300>;
-    layers = <0 6>;};
+    };
 
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        every_layer {
+            if-layers = <0 6>;
+            then-layer = <1 2 3 4 5>;
+        };
+    };
+};
 / {
     chosen {
       zmk,matrix_transform = &five_column_transform;
