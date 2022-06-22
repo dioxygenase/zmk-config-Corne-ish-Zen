@@ -17,7 +17,9 @@
 #define FUN 5
 #define QWE 6
 
-&lt { quick_tap_ms = <300>; };
+&lt { 
+    quick_tap_ms = <300>;
+    layers = <0 6>;};
 
 / {
     chosen {
