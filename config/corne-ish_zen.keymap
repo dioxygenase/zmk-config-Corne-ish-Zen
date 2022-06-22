@@ -33,13 +33,6 @@
         bindings = <&tog QWE>, <&kp LC(SPACE)>;
         };
     };
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        every_layer {
-            if-layers = <1>;
-            then-layer = <2 4>;
-        };
-    };
     combos {
         compatible = "zmk,combos";
         combo_lbrc {
