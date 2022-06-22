@@ -143,6 +143,18 @@
             bindings = <&kp QMARK>;
             layers = <0 1>;
         };
+        combo_lang {
+            timeout-ms = <30>;
+            key-positions = <27 28>;
+            bindings = <&kp P>;
+            layers = <0 1>;
+        };
+        combo_lang {
+            timeout-ms = <30>;
+            key-positions = <28 29>;
+            bindings = <&kp LS(P)>;
+            layers = <0 1>;
+        };
         combo_esc {
             timeout-ms = <30>;
             key-positions = <30 31>;
@@ -161,6 +173,7 @@
             bindings = <&macro_lang>;
             layers = <0 1>;
         };
+
 
     };
     
