@@ -37,7 +37,7 @@
         compatible = "zmk,conditional-layers";
         every_layer {
             if-layers = <1>;
-            then-layer = <2 3 4 5 6>;
+            then-layer = <3>;
         };
     };
     combos {
