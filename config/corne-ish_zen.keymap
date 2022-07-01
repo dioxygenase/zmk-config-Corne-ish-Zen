@@ -89,6 +89,18 @@
             bindings = <&kp EXCL>;
             layers = <0 1>;
         };
+        combo_del {
+            timeout-ms = <30>;
+            key-positions = <13 31>;
+            bindings = <&kp LA(BSPC)>;
+            layers = <0 1>;
+        };
+        combo_deldel {
+            timeout-ms = <30>;
+            key-positions = <12 31>;
+            bindings = <&kp LC(BSPC)>;
+            layers = <0 1>;
+        };
         combo_rbrc {
             timeout-ms = <30>;
             key-positions = <8 9>;
@@ -230,7 +242,7 @@
             label = "NAV";
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp LG(LS(Z))   &kp LG(V)       &kp LG(C)       &kp LG(X)       &kp LG(Z)        
-&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &bt BT_SEL 4    &kp CAPS        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp LEFT_ARROW
+&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &bt BT_SEL 4    &kp CAPS        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
 &kp LT      &kp GT          &kp LBKT        &kp RBKT        &kp GRAVE       &kp EQUAL       &kp EXCL        &kp AT     &kp HASH        &kp QUESTION
                                                 &none          &none          &none          &kp K_PREV      &kp K_PP        &kp K_NEXT
             >;
