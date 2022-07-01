@@ -98,7 +98,7 @@
         combo_deldel {
             timeout-ms = <30>;
             key-positions = <12 31>;
-            bindings = <&kp LC(BSPC)>;
+            bindings = <&kp LG(BSPC)>;
             layers = <0 1>;
         };
         combo_rbrc {
