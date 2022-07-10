@@ -90,13 +90,13 @@
             layers = <0 1>;
         };
         combo_del {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             key-positions = <13 31>;
             bindings = <&kp LA(BSPC)>;
             layers = <0 1>;
         };
         combo_deldel {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             key-positions = <12 31>;
             bindings = <&kp LG(BSPC)>;
             layers = <0 1>;
@@ -174,19 +174,19 @@
             layers = <0 1>;
         };
         combo_esc {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             key-positions = <30 31>;
             bindings = <&kp ESC>;
             layers = <0 1>;
         };
         combo_caps {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             key-positions = <31 32>;
             bindings = <&kp CAPS>;
             layers = <0 1>;
         };
         combo_lang {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             key-positions = <34 35>;
             bindings = <&macro_lang>;
             layers = <0 1>;
@@ -261,7 +261,7 @@
          mou_layer {
             label = "MOU";
             bindings = <
-&none           &none           &none           &none           &none   &none   &none   &none   &none   &none
+&none           &none           &none           &none           &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
 &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none   &none   &none   &none   &none   &none
 &none           &none           &none           &none           &none   &none   &none   &none   &none   &none
                                                 &trans          &trans          &trans  &trans  &trans  &trans
