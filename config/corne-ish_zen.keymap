@@ -191,6 +191,12 @@
             bindings = <&macro_lang>;
             layers = <0 1>;
         };
+        combo_alfred {
+            timeout-ms = <17>;
+            key-positions = <16 34>;
+            bindings = <&kp LG(LBKT)>;
+            layers = <0 1>;
+        };
 
 
     };
