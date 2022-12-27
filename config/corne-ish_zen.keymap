@@ -36,7 +36,7 @@
     combos {
         compatible = "zmk,combos";
         combo_lbrc {
-            timeout-ms = <17>;
+            timeout-ms = <18>;
             key-positions = <0 1>;
             bindings = <&kp LBRC>;
             layers = <0 1>;
