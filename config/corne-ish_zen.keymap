@@ -250,8 +250,8 @@
             label = "MOU";
             bindings = <
 &none           &none           &none           &none           &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
-&kp LGUI        &kp LALT        &kp LCTRL       &kp LSHFT       &none   &none   &none   &none   &none   &none
-&none           &none           &none           &none           &none   &none   &none   &none   &none   &none
+&kp LG(A)       &kp LG(S)       &kp LCTRL       &kp LG(F)       &none   &none   &none   &none   &none   &none
+&kp LG(Z)       &kp LG(X)       &kp LG(C)       &kp LG(V)       &none   &none   &none   &none   &none   &none
                                                 &trans          &trans          &trans  &trans  &trans  &trans
             >;
         };
